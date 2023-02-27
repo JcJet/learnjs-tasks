@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert(getSecondsToday())
+	
+	function getSecondsToday() {
+		let now = new Date();
+		let seconds = now.getSeconds();
+		seconds += now.getMinutes() * 60;
+		seconds += now.getHours() * 60 * 60;
+		return seconds;
+	};
+  </script>
+</body>
+</html>

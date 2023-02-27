@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	let numbers = []
+	while (true) {
+		let newNumber = prompt("Введите число:", "");
+		if (newNumber === "" || isNaN(+newNumber)) break;
+		else numbers.push(Number(newNumber));
+	};
+	let sum = 0;
+	for (let num of numbers) sum += num;
+	alert(sum);
+	
+	
+  </script>
+</body>
+</html>

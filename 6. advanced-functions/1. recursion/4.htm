@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	let list = {
+	  value: 1,
+	  next: {
+		value: 2,
+		next: {
+		  value: 3,
+		  next: {
+			value: 4,
+			next: null
+		  }
+		}
+	  }
+	};
+	
+	printList(list)
+	
+	function printList(list) {
+		let listCopy = list;
+		while (true) {
+			alert(listCopy.value)
+			listCopy = listCopy.next;
+			if (!listCopy) break;
+		}
+	};
+	
+	printListRecursion(list)
+	
+	function printListRecursion(list) {
+		alert(list.value);
+		if (list.next) {
+			printList(list.next);
+		};
+	};
+  </script>
+</body>
+</html>

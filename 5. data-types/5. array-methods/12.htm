@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+
+	let strings = ["кришна", "кришна", "харе", "харе",
+	  "харе", "харе", "кришна", "кришна", ":-O"
+	];
+
+	alert( unique(strings) ); // кришна, харе, :-O
+	
+	function unique(arr) {
+		let uniqueWords = []
+		for (let i = 0; i < arr.length; i++) {
+			if (uniqueWords.includes(arr[i])) 
+				continue;
+			else 
+				uniqueWords.push(arr[i]);
+		};
+		return uniqueWords;
+	}
+  </script>
+</body>
+</html>

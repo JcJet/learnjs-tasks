@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert(getMaxSubSum([-1, 2, 3, -9]) == 5)
+	alert(getMaxSubSum([2, -1, 2, 3, -9]) == 6)
+	alert(getMaxSubSum([-1, 2, 3, -9, 11]) == 11)
+	alert(getMaxSubSum([-2, -1, 1, 2]) == 3)
+	alert(getMaxSubSum([100, -9, 2, -3, 5]) == 100)
+	alert(getMaxSubSum([1, 2, 3]) == 6)
+	alert(getMaxSubSum([-1, -2, -3]) == 0)
+	
+	function getMaxSubSum(arr) {
+		let curSum = 0;
+		let curMax = 0;
+		let startIdx = 0;
+		let startIdxMax = 0
+		let endIdx = 0;
+		let endIdxMax = 0;
+		for (let i = 0; i < arr.length; i++) {
+			if (curSum === 0) startIdx = i;
+			curSum += arr[i];
+			if (curSum > curMax) {
+				curMax = curSum;
+				endIdxMax = i;
+				startIdxMax = startIdx;
+			};
+			if (curSum <= 0) {
+				curSum = 0;
+				continue;
+			};
+		};
+		return curMax;	
+
+			
+	};
+  </script>
+</body>
+</html>

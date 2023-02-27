@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert(randomInteger(2,5))
+	function randomInteger(min, max) {
+		let randomNumber = Math.random();
+		let numberRange = max - min + 1;
+		randomNumber *= numberRange	;
+		randomNumber += min;
+		return Math.floor(randomNumber);
+	};
+  </script>
+</body>
+</html>

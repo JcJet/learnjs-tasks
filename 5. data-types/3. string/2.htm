@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert(checkSpam('buy ViAgRA now'))
+	alert(checkSpam('free xxxxx'))
+	alert(checkSpam("innocent rabbit"))
+	
+	function checkSpam(str) {
+		let lowercaseStr = str.toLowerCase()
+		return (lowercaseStr.includes('viagra') || lowercaseStr.includes('xxx'))
+	};
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    'use strict';
+	let n = 15
+	for (let num = 2; num <= 15; num++)
+		{
+			let prime = true
+			for(let i = 2, s = Math.sqrt(num); i <= s; i++) 
+				{
+					if(num % i === 0) prime = false;
+				}
+			if (prime) alert(num)
+		}
+  </script>
+</body>
+</html>

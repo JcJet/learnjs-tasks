@@ -1,0 +1,2 @@
+homePlanetName = "Земля"
+curUserName = "User"

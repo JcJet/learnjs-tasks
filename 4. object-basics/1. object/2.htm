@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    "use strict";
+	let schedule = {};
+
+	alert( isEmpty(schedule) ); // true
+
+	schedule["8:30"] = "get up";
+
+	alert( isEmpty(schedule) ); // false
+	
+	function isEmpty(obj)
+		{
+			let empty = true
+			for (let item in obj)
+				empty = false
+			return empty
+		}
+  </script>
+</body>
+</html>

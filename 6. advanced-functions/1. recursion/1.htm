@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert (sumToLoop(4) === 10);
+	alert (sumToRecursion(4) === 10);
+	alert (sumToFormula(4) === 10);
+	
+	function sumToLoop(n) {
+		let sum = 0;
+		for (let i = 1; i <= n; i++) {
+			sum += i;
+		};
+		return sum;
+	};
+	
+	function sumToRecursion(n) {
+		if (n === 1) {
+			return 1;
+		}
+		else {
+			return n + sumToRecursion(n-1);
+		};
+	}
+	
+	function sumToFormula(n) {
+		 return n * (n + 1) / 2;
+	};
+  </script>
+</body>
+</html>

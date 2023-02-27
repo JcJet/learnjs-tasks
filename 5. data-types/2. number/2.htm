@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert(readNumber())
+	function readNumber() {
+		while(true) {
+			let num = prompt("Введите число:","")
+			if (num === "" || num === null)
+				return null
+			if (isFinite(num))
+				return +num
+		};
+	};
+  </script>
+</body>
+</html>

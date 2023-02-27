@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert(extractCurrencyValue('$120') === 120)
+	
+	function extractCurrencyValue(str) {
+		let currencyIndex = str.indexOf('$')
+		return +str.slice(currencyIndex + 1)
+	};
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	function printNumbers(from, to){
+		let counter = from
+		let f = function() {
+			document.body.innerHTML += `${counter++} `
+			if (counter <= to) {
+				setTimeout(f, 1000)
+			}
+		}
+		let timeoutID = setTimeout(f, 1000);
+	}
+	printNumbers(4,11);
+  </script>
+</body>
+</html>

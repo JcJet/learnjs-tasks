@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	"use strict";
+	alert (sum(1)(2));
+	
+	function sum(n) {
+		return function(m) {
+			return n+m;
+		}
+	}
+  </script>
+</body>
+</html>

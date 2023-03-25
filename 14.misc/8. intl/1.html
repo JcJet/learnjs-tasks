@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  "use strict";
+  let animals = ["тигр", "ёж", "енот", "ехидна", "АИСТ", "ЯК"];
+
+  let collator = new Intl.Collator();
+  animals.sort((a, b) => collator.compare(a, b));
+
+  alert( animals ); // АИСТ,ёж,енот,ехидна,тигр,ЯК
+
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  "use strict";
+  alert( isInteger(1) ); // true
+  alert( isInteger(1.5) ); // false
+  alert( isInteger(-0.5) ); // false
+  function isInteger(num) {
+    return num == (num ^ 0)
+  }
+</script>
+</body>
+</html>
